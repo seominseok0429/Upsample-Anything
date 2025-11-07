@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -186,6 +187,30 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+<style>
+.logo-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px; /* 로고 간격 */
+}
+
+.logo-row img {
+  height: 110px;            /* ✅ 크기 키움 */
+  width: auto;
+  max-width: 260px;         /* 최대 너비 제한 */
+  object-fit: contain;      /* 비율 유지 */
+  opacity: 0.95;
+  transition: all 0.25s ease;
+}
+
+.logo-row img:hover {
+  opacity: 1;
+  transform: scale(1.06);   /* hover 시 살짝 확대 */
+}
+</style>
 
   <main id="main-content">
   <section class="hero">
@@ -218,19 +243,10 @@
                     <span class="author-block">KAIST<sup>1</sup>, MIT<sup>2</sup>, Microsoft<sup>3</sup></span>
                   </div>
                   
-                  <div class="columns is-centered" style="margin-top: 20px; align-items: center; flex-wrap: wrap;">
-                    <div class="column is-narrow has-text-centered">
-                      <img src="static/images/kaist.png" alt="KAIST"
-                           style="height: 75px; width: auto; max-width: 200px; object-fit: contain; margin: 0 25px;">
-                    </div>
-                    <div class="column is-narrow has-text-centered">
-                      <img src="static/images/mit.png" alt="MIT"
-                           style="height: 75px; width: auto; max-width: 220px; object-fit: contain; margin: 0 25px;">
-                    </div>
-                    <div class="column is-narrow has-text-centered">
-                      <img src="static/images/ms.png" alt="Microsoft"
-                           style="height: 75px; width: auto; max-width: 220px; object-fit: contain; margin: 0 25px;">
-                    </div>
+                  <div class="logo-row">
+                    <img src="static/images/kaist_logo.png" alt="KAIST">
+                    <img src="static/images/mit_logo.png" alt="MIT">
+                    <img src="static/images/microsoft_logo.png" alt="Microsoft">
                   </div>
 
             
